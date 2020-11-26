@@ -1,0 +1,12 @@
+appId: com.twitter.clone
+productName: Twitter Clone
+copyright: Copyright © 2020 Javier Granados
+directories:
+  output: dist
+  buildResources: resources
+files:
+  - from: .
+    filter:
+      - package.json
+      - app
+publish: null

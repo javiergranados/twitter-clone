@@ -1,0 +1,41 @@
+{
+  "name": "twitter-clone",
+  "description": "A twitter timeline clone built with electron",
+  "version": "0.1.0",
+  "author": "Javier Granados",
+  "license": "SEE LICENSE IN LICENSE",
+  "keywords": [
+    "react",
+    "next",
+    "javascript",
+    "twitter",
+    "electron"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jvgranados/twitter-clone"
+  },
+  "main": "app/background.js",
+  "scripts": {
+    "dev": "nextron",
+    "build": "nextron build",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "dependencies": {
+    "electron-serve": "^1.0.0",
+    "electron-store": "^6.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.7",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/preset-typescript": "^7.12.7",
+    "babel-loader": "^8.2.1",
+    "electron": "^11.0.2",
+    "electron-builder": "^22.9.1",
+    "next": "9.5.1",
+    "nextron": "^5.15.11",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "webpack": "4.44.0"
+  }
+}
