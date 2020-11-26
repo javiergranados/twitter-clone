@@ -1,4 +1,4 @@
-import Head from 'next/head';
+import Head from 'next/head'
 
 function Home() {
   return (
@@ -7,12 +7,10 @@ function Home() {
         <title>Twitter clone</title>
       </Head>
       <div>
-        <p>
-          Hello world!
-        </p>
+        <p>Hello world!</p>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home
