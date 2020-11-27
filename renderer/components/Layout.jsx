@@ -26,7 +26,7 @@ function Layout({ children }) {
   }
 
   const renderIcon = (name, selected = false) => (
-    <div className="cursor-pointer flex items-center justify-center w-1/4 py-3">
+    <div className="flex items-center justify-center w-1/4 py-3 cursor-pointer">
       <svg viewBox="0 0 24 24" className={`fill-current text-twitter${selected ? 'Blue' : 'Gray'} w-7 h-7`}>
         {icons[name]}
       </svg>
@@ -41,8 +41,8 @@ function Layout({ children }) {
       <div className="flex flex-col w-screen h-screen text-white bg-twitterDarkBlue">
         <div className="relative flex flex-col flex-1 w-full overflow-hidden">
           <header className="flex items-center px-4 py-3 border-b border-twitterGray">
-            <img className="rounded-full w-10 h-10" src="http://twivatar.glitch.me/jvgranados_" alt="profile" />
-            <p className="ml-7 text-lg font-bold">Latest Tweets</p>
+            <img className="w-10 h-10 rounded-full" src="http://twivatar.glitch.me/jvgranados_" alt="profile" />
+            <p className="text-lg ml-7 fdont-boldd">Latest Tweets</p>
           </header>
           <main className="flex-1 overflow-auto">{children}</main>
           <footer className="flex border-t border-twitterGray">
