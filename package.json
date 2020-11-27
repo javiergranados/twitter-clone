@@ -27,12 +27,14 @@
     "electron": "^11.0.2",
     "electron-serve": "^1.0.0",
     "electron-store": "^6.0.1",
-    "next": "9.5.1"
+    "next": "9.5.1",
+    "prop-types": "^15.7.2"
   },
   "devDependencies": {
     "@babel/core": "^7.12.7",
     "@babel/plugin-proposal-class-properties": "^7.12.1",
     "@babel/preset-typescript": "^7.12.7",
+    "autoprefixer": "^9",
     "babel-loader": "^8.2.1",
     "electron-builder": "^22.9.1",
     "eslint": "^7.14.0",
@@ -44,9 +46,13 @@
     "eslint-plugin-react": "^7.21.5",
     "eslint-plugin-react-hooks": "^4.2.0",
     "nextron": "^5.15.11",
+    "postcss": "^7",
     "prettier": "^2.2.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "stylelint": "^13.8.0",
+    "stylelint-config-standard": "^20.0.0",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat",
     "webpack": "4.44.0"
   }
 }
