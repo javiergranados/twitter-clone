@@ -10,8 +10,13 @@ function Layout({ title, children }) {
     const selected = router.pathname === name
     return (
       <Link href={name}>
-        <a className="flex items-center justify-center w-1/4 py-3 cursor-pointer">
-          <svg viewBox="0 0 24 24" className={`fill-current text-twitter${selected ? 'Blue' : 'Gray'} w-7 h-7`}>
+        <a className="flex items-center justify-center w-1/4 py-3 cursor-default">
+          <svg
+            viewBox="0 0 24 24"
+            className={`cursor-pointer fill-current text-twitter${
+              (selected && 'Blue') || 'Gray'
+            } w-7 h-7 hover:text-twitterBlue`}
+          >
             {(selected && selectedIcons[name]) || icons[name]}
           </svg>
         </a>
