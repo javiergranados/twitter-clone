@@ -1,7 +1,7 @@
-function Home() {
+function Messages() {
   return (
     <div className="flex items-center justify-center w-full h-full">
-      <p>Home Page</p>
+      <p>Messages Page</p>
     </div>
   )
 }
@@ -9,9 +9,9 @@ function Home() {
 export async function getStaticProps() {
   return {
     props: {
-      title: 'Latest Tweets',
+      title: 'Messages',
     },
   }
 }
 
-export default Home
+export default Messages

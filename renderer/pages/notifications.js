@@ -1,7 +1,7 @@
-function Home() {
+function Notifications() {
   return (
     <div className="flex items-center justify-center w-full h-full">
-      <p>Home Page</p>
+      <p>Notifications Page</p>
     </div>
   )
 }
@@ -9,9 +9,9 @@ function Home() {
 export async function getStaticProps() {
   return {
     props: {
-      title: 'Latest Tweets',
+      title: 'Notifications',
     },
   }
 }
 
-export default Home
+export default Notifications
