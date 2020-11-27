@@ -4,6 +4,8 @@ module.exports = {
     extend: {
       colors: {
         twitterBlue: '#1DA1F2',
+        twitterDarkBlue: '#15212b',
+        twitterGray: '#3d5466',
       },
     },
   },

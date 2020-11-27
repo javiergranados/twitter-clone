@@ -1,5 +1,5 @@
 function Home() {
-  return <p className="text-gray-200">Hellow world!</p>
+  return <p>Home Page</p>
 }
 
 export default Home
