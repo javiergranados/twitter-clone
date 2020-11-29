@@ -30,7 +30,8 @@
     "next": "9.5.1",
     "prop-types": "^15.7.2",
     "swr": "^0.3.9",
-    "twit": "^2.2.11"
+    "twit": "^2.2.11",
+    "uuid": "^8.3.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.7",
