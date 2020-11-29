@@ -2,10 +2,10 @@ import useSWR from 'swr'
 import { v4 as uuidv4 } from 'uuid'
 import { internalApiPaths, buttons } from '../constants'
 import fetcher from '../utils/api'
+import getDifferenceByMinutes from '../utils/dates'
 
 function Home() {
   const { data } = useSWR(internalApiPaths.FETCH_TWEETS, fetcher)
-  console.log('*****data', data)
 
   if (!data) {
     return (
@@ -29,7 +29,7 @@ function Home() {
           <p className="mb-1 text-twitterGray">
             <span className="font-bold text-white">{tweet.user.name}</span>
             <span className="pl-1">{`@${tweet.user.screen_name}`}</span>
-            <span className="ml-2 ">43 min</span>
+            <span className="ml-2 ">{`${getDifferenceByMinutes(tweet.created_at)} min`}</span>
           </p>
           <p>{tweet.text}</p>
           <div className="flex justify-between mt-3 text-twitterGray">
