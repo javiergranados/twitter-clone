@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types'
 import Head from 'next/head'
+import { SWRConfig } from 'swr'
 import Layout from '../components/Layout'
 
 import '../styles/globals.css'
@@ -12,8 +13,15 @@ function MyApp({ Component, pageProps }) {
         <title>Twitter Clone</title>
       </Head>
       <Layout title={pageProps.title}>
-        {/* eslint-disable-next-line */}
+        <SWRConfig
+          value={{
+            refreshInterval: 0,
+            revalidateOnFocus: false,
+          }}
+        >
+          {/* eslint-disable-next-line */}
         <Component {...pageProps} />
+        </SWRConfig>
       </Layout>
     </>
   )

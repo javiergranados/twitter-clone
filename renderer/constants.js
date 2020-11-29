@@ -1,3 +1,7 @@
+const internalApiPaths = {
+  FETCH_TWEETS: '/api/tweets',
+}
+
 const icons = {
   '/home': (
     <g>
@@ -46,4 +50,4 @@ const selectedIcons = {
   ),
 }
 
-export { selectedIcons, icons }
+export { icons, internalApiPaths, selectedIcons }
