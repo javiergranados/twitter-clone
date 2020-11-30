@@ -1,4 +1,5 @@
 import Twit from 'twit'
+import { TWEET_COUNT } from '../../../constants/api'
 
 const T = new Twit({
   consumer_key: process.env.API_KEY,
@@ -9,7 +10,7 @@ const T = new Twit({
 
 export default async (req, res) => {
   try {
-    T.get('statuses/home_timeline', { count: 10 }, (_, data) => {
+    T.get('statuses/home_timeline', { count: TWEET_COUNT }, (_, data) => {
       res.json(data)
     })
   } catch (error) {
