@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import Head from 'next/head'
 import { SWRConfig } from 'swr'
-import Layout from '../layouts/Layout'
+import Layout from '../components/layout/Layout'
 import '../styles/globals.css'
 import '../styles/tailwind.css'
 

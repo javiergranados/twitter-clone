@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { selectedMenuIcons, menuIcons } from '../constants/icons'
+import { selectedMenuIcons, menuIcons } from '../../constants/icons'
 
 function Footer() {
   const router = useRouter()
