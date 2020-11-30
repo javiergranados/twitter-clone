@@ -6,7 +6,7 @@ function Timeline({ data }) {
 }
 
 Timeline.propTypes = {
-  data: PropTypes.shape({ errors: PropTypes.shape({}) }).isRequired,
+  data: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.shape({})])),
 }
 
 export default Timeline
