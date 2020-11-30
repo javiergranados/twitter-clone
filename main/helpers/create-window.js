@@ -61,6 +61,8 @@ export default function createWindow(windowName, options) {
   win = new BrowserWindow({
     ...options,
     ...state,
+    minWidth: options.width,
+    minHeight: options.height,
     webPreferences: {
       nodeIntegration: true,
       ...options.webPreferences,
