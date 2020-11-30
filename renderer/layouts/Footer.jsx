@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { selectedIcons, icons } from '../constants'
+import { selectedMenuIcons, menuIcons } from '../constants/icons'
 
 function Footer() {
   const router = useRouter()
@@ -16,7 +16,7 @@ function Footer() {
               (selected && 'Blue') || 'Gray'
             } w-7 h-7 hover:text-twitterBlue`}
           >
-            {(selected && selectedIcons[name]) || icons[name]}
+            {(selected && selectedMenuIcons[name]) || menuIcons[name]}
           </svg>
         </a>
       </Link>

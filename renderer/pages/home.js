@@ -1,5 +1,5 @@
 import useSWR from 'swr'
-import { internalApiPaths } from '../constants'
+import internalApiPaths from '../constants/api'
 import fetcher from '../utils/api'
 import Loading from '../components/Loading'
 import Error from '../components/Error'
